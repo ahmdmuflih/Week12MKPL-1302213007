@@ -36,4 +36,4 @@ jobs:
     - name : Build and analyze
       env :
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-      run : mvn -B verify sonar:sonar -Dsonar.host.url-https://sonarcloud.io -Dsonar.organization=ahmad-muflih -Dsonar.projectKey=ahmdmuflih_Week12MKPL-1302213007
+      run : mvn -B verify sonar:sonar -Dsonar.host.url=https://sonarcloud.io -Dsonar.organization=ahmad-muflih -Dsonar.projectKey=ahmdmuflih_Week12MKPL-1302213007
